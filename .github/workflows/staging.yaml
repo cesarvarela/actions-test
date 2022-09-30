@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-deploy:
-    environment: staging
     uses: ./.github/workflows/deploy.yaml
+    environment: staging
     secrets: inherit
