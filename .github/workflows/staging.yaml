@@ -1,5 +1,4 @@
 name: Deploy Staging
-environment: staging
 
 on:
   push:
@@ -8,5 +7,6 @@ on:
 
 jobs:
   call-deploy:
+    environment: staging
     uses: ./.github/workflows/deploy.yaml
     secrets: inherit
