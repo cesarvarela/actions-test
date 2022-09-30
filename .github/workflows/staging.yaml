@@ -1,0 +1,12 @@
+name: Deploy Staging
+environment: staging
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  call-deploy:
+    uses: cesarvarela/actions-test/.github/workflows/deploy.yaml@staging
+    secrets: inherit
