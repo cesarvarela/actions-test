@@ -4,7 +4,7 @@ on:
     inputs:
       environment:
         type: string
-        description: environment to deploy to
+        description: Environment to deploy to
         required: true
 
 jobs:
@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: step 1
-        run: echo "WFT is this? ${{secrets.STAGING}}"   
+        run: echo "WTF is this? ${{secrets.WTF}}"   
