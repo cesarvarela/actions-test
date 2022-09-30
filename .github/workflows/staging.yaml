@@ -8,5 +8,5 @@ on:
 
 jobs:
   call-deploy:
-    uses: cesarvarela/actions-test/.github/workflows/deploy.yaml@staging
+    uses: ./.github/workflows/deploy.yaml@staging
     secrets: inherit
