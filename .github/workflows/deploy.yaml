@@ -2,3 +2,10 @@ name: Deploy
 on:
   workflow_call
 
+jobs:
+  greet:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: step 1
+        ## Reference your environment variables
+        run: echo "The API key is: ${{env.API_KEY}}"   
